@@ -3,7 +3,7 @@ require('./lib/middleware');
 require('./lib/api');
 require('./lib/crypt');
 
-var Login = require('./Login');
+var Login = require('./lib/Login');
 
 module.exports = new Login();
 
