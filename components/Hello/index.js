@@ -20,7 +20,6 @@ export default function Login () {
       }
     })
   }
-
   return (
     <View styleName='root'>
       <TextInput
