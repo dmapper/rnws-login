@@ -18,7 +18,7 @@ export default function Login () {
         'X-Requested-With': 'XMLHttpRequest',
         'Content-type': 'application/json; charset=utf-8'
       }
-    })
+    }).then(res => console.log(res))
   }
   return (
     <View styleName='root'>
