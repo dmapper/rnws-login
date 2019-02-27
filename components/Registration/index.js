@@ -4,15 +4,21 @@ import { observer } from 'react-sharedb'
 import axios from 'axios'
 import './index.styl'
 
-export default observer (function Login () {
+export default observer (function Registration () {
   let [email, $email] = useState('')
   let [password, $password] = useState('')
+  let [confirm, $confirm] = useState('')
+  let [firstname, $firstname] = useState('')
+  let [lastname, $lastname] = useState('')
 
-  const handleLoginPress = () => {
-    axios.post('/auth/login',
+  const handleRegisterPress = () => {
+    axios.post('/auth/register',
     {
       email,
-      password
+      password,
+      confirm,
+      firstname,
+      lastname
     },
     {
       headers: {
@@ -32,7 +38,7 @@ export default observer (function Login () {
     <View styleName='root'>
       <TextInput
         styleName='textInput'
-        placeholder='Username'
+        placeholder='Email'
         onChangeText={text => $email(text)}
       />
       <TextInput
@@ -41,10 +47,26 @@ export default observer (function Login () {
         secureTextEntry={true}
         onChangeText={text => $password(text)}
       />
+      <TextInput
+        styleName='textInput'
+        placeholder='Confirm password'
+        secureTextEntry={true}
+        onChangeText={text => $confirm(text)}
+      />
+      <TextInput
+        styleName='textInput'
+        placeholder='First name'
+        onChangeText={text => $firstname(text)}
+      />
+      <TextInput
+        styleName='textInput'
+        placeholder='Last name'
+        onChangeText={text => $lastname(text)}
+      />
       <Button
-        className='button'
-        onPress={handleLoginPress}
-        title='Login'
+        styleName='button'
+        title='Register'
+        onPress={handleRegisterPress}
       />
     </View>
   )
