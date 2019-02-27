@@ -6,5 +6,3 @@ require('./lib/crypt');
 var Login = require('./lib/Login');
 
 module.exports = new Login();
-
-export { default as LoginComponent } from './components/Login'
