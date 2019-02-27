@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/derbyparty/rnws-login.git"
+    "url": "git://github.com/dmapper/rnws-login"
   },
   "keywords": [
     "derby",
@@ -47,6 +47,6 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/derbyparty/rnws-login/issues"
+    "url": "https://github.com/dmapper/rnws-login"
   }
 }
