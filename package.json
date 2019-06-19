@@ -1,6 +1,6 @@
 {
   "name": "rnws-login",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Auth plugin for rnw",
   "main": "index.js",
   "scripts": {
