@@ -1,2 +1,2 @@
-#rnws-login
-- awesome readme!
+# Notice
+Social authentication doesn't work for mobile
