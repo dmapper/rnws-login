@@ -30,7 +30,7 @@
     "react": "*",
     "react-dom": "*",
     "react-native": "*",
-    "react-sharedb": "*",
+    "startupjs": "*",
     "scrypt": "*",
     "scryptsy": "*"
   },

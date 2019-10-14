@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { View, TextInput, Button, Linking } from 'react-native'
-import { observer } from 'react-sharedb'
+import { observer } from 'startupjs'
 import axios from 'axios'
 import './index.styl'
 
